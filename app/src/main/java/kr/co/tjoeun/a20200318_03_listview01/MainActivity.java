@@ -37,12 +37,14 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setValues() {
 
-        addStores();
+
 
 //        어댑터를 객체화 (우리가 작성한 생성자 활용)
         storeAdapter = new StoreAdapter(mContext, R.layout.store_list_item,storeDatas);
 //        리스트뷰와 어댑터를 연결
         binding.storeListView.setAdapter(storeAdapter);
+
+        addStores();
 
     }
 

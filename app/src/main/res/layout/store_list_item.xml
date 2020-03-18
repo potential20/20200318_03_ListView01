@@ -21,12 +21,14 @@
             android:layout_marginLeft="10dp"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/storeNameTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="가게 이름"
                 android:textSize="20sp"
                 android:textColor="#000000"/>
             <TextView
+                android:id="@+id/storeRatingTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="평점 : ?점"/>
