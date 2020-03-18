@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
 
 //    가게목록이 담길 리스트
     List<Store> storeDatas = new ArrayList<>();
-//    목록을 뿌려줄 StoreAdapter 변수
+    //    목록을 뿌려줄 StoreAdapter 변수
     StoreAdapter storeAdapter = null;
 
     ActivityMainBinding binding = null;
@@ -49,6 +49,7 @@ public class MainActivity extends BaseActivity {
     void addStores() {
         storeDatas.add(new Store("삼겹더하기 본점",4));
         storeDatas.add(new Store("밥해주는 남자",3));
+        storeAdapter.notifyDataSetChanged();
 
     }
 }
